@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ec1249-f41b-48db-bc25-f9cff0542306" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/AggregateRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/Identifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/ValueObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/CategoryID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/UseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/UseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/UseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/UseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/category/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +84,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/murilorodrigues/Documents/repositories/java_ddd/java-ddd-catalog/infrastructure/src/main/java/com/ddd_catalog/domain/application/infrastructure/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -133,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705787643712</updated>
       <workItem from="1705787645611" duration="263000" />
-      <workItem from="1705787916140" duration="2929000" />
+      <workItem from="1705787916140" duration="5083000" />
     </task>
     <servers />
   </component>
@@ -154,11 +156,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/UseCase.java</url>
           <line>13</line>

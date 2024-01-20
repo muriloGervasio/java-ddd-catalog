@@ -1,12 +1,12 @@
 package com.ddd_catalog.domain.category;
 
+import com.ddd_catalog.domain.AggregateRoot;
+
 import java.time.Instant;
 import java.util.UUID;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Category {
-    private String id;
+public class Category extends AggregateRoot<CategoryID> {
+    private CategoryID id;
     private String name;
     private String description;
     private boolean active;
@@ -14,13 +14,14 @@ public class Category {
     private Instant updatedAt;
     private Instant deletedAt;
 
-    private Category(final String id,
+    private Category(final CategoryID id,
                     final String name,
                     final String description,
                     final boolean active,
                     final Instant createdAt,
                     final Instant updatedAt,
                     final Instant deletedAt) {
+        super(id);
         this.id = id;
         this.name = name;
         this.description = description;
@@ -36,7 +37,7 @@ public class Category {
         final var id = UUID.randomUUID().toString();
         final var now = Instant.now();
 
-        return new Category(id,
+        return new Category(CategoryID.unique(),
                 name,
                 description,
                 active,
@@ -45,7 +46,7 @@ public class Category {
                 now);
     }
 
-    public String getId() {
+    public CategoryID getId() {
         return id;
     }
 
@@ -73,31 +74,5 @@ public class Category {
         return deletedAt;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
-    public void setCreatedAt(Instant createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public void setUpdatedAt(Instant updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public void setDeletedAt(Instant deletedAt) {
-        this.deletedAt = deletedAt;
-    }
 }
