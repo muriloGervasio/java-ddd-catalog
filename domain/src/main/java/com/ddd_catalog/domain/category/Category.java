@@ -37,6 +37,7 @@ public class Category extends AggregateRoot<CategoryID> {
                                        final boolean active) {
         final var id = UUID.randomUUID().toString();
         final var now = Instant.now();
+        final var deletedAt = active ? null : now;
 
         return new Category(CategoryID.unique(),
                 name,
@@ -44,7 +45,7 @@ public class Category extends AggregateRoot<CategoryID> {
                 active,
                 now,
                 now,
-                now);
+                deletedAt);
     }
 
     public CategoryID getId() {

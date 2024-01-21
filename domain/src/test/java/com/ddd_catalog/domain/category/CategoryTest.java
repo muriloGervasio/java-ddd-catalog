@@ -22,7 +22,7 @@ public class CategoryTest {
         Assertions.assertEquals(expectedIsActive, category.isActive());
         Assertions.assertNotNull(category.getCreatedAt());
         Assertions.assertNotNull(category.getUpdatedAt());
-        Assertions.assertNotNull(category.getDeletedAt());
+        Assertions.assertNull(category.getDeletedAt());
     }
 
     public void givenAnInvalidNullName_whenCallNewCategory_thenThrowException() {
@@ -40,5 +40,98 @@ public class CategoryTest {
 
         Assertions.assertEquals(expectedErrorMessage, domainException.getErrors().get(0).message());
         Assertions.assertEquals(expectedErrorLength, domainException.getErrors().size());
+    }
+
+    public void givenAnInvalidEmptyName_whenCallNewCategory_thenThrowException() {
+        final String expectedName = "   ";
+        final var expectedDescription = "A Categoria mais assistida";
+        final var expectedIsActive = true;
+        final var expectedErrorMessage = "Name is required";
+        final var expectedErrorLength = 1;
+
+        final var actualCategory = Category.newCategory(expectedName, expectedDescription, expectedIsActive);
+
+        final var handler = new ThrowsValidationHandler();
+
+        final var domainException = Assertions.assertThrows(DomainException.class, () -> actualCategory.validate(handler));
+
+        Assertions.assertEquals(expectedErrorMessage, domainException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorLength, domainException.getErrors().size());
+    }
+
+    @Test
+    public void givenAnInvalidNameLengthName_whenCallNewCategory_thenThrowException() {
+        final String expectedName = "Fi ";
+        final var expectedDescription = "A Categoria mais assistida";
+        final var expectedIsActive = true;
+        final var expectedErrorMessage = "Name length must be more than 3";
+        final var expectedErrorLength = 1;
+
+        final var actualCategory = Category.newCategory(expectedName, expectedDescription, expectedIsActive);
+
+        final var handler = new ThrowsValidationHandler();
+
+        final var domainException = Assertions.assertThrows(DomainException.class, () -> actualCategory.validate(handler));
+
+        Assertions.assertEquals(expectedErrorMessage, domainException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorLength, domainException.getErrors().size());
+    }
+
+    @Test
+    public void givenAnInvalidNameLength_whenCallNewCategory_thenThrowException() {
+        final String expectedName = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum";
+        final var expectedDescription = "A Categoria mais assistida";
+        final var expectedIsActive = true;
+        final var expectedErrorMessage = "Name length must be less than 20";
+        final var expectedErrorLength = 1;
+
+        final var actualCategory = Category.newCategory(expectedName, expectedDescription, expectedIsActive);
+
+        final var handler = new ThrowsValidationHandler();
+
+        final var domainException = Assertions.assertThrows(DomainException.class, () -> actualCategory.validate(handler));
+
+        Assertions.assertEquals(expectedErrorMessage, domainException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorLength, domainException.getErrors().size());
+    }
+
+    @Test
+    public void givenAnInvalidEmptyDescription_whenCallNewCategory_thenThrowException() {
+        final String expectedName = "Mathes";
+        final var expectedDescription = "  ";
+        final var expectedIsActive = true;
+        final var expectedErrorMessage = "Description is required";
+        final var expectedErrorLength = 1;
+
+        final var actualCategory = Category.newCategory(expectedName, expectedDescription, expectedIsActive);
+
+        final var handler = new ThrowsValidationHandler();
+
+        final var domainException = Assertions.assertThrows(DomainException.class, () -> actualCategory.validate(handler));
+
+        Assertions.assertEquals(expectedErrorMessage, domainException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorLength, domainException.getErrors().size());
+    }
+
+    @Test
+    public void givenAnValidFalseIsActive_whenCallNewCategory_thenThrowException() {
+        final String expectedName = "Mathes";
+        final var expectedDescription = " Melhor categoria";
+        final var expectedIsActive = false;
+        final var expectedErrorLength = 0;
+
+        final var actualCategory = Category.newCategory(expectedName, expectedDescription, expectedIsActive);
+
+        final var handler = new ThrowsValidationHandler();
+
+
+        Assertions.assertNotNull(actualCategory);
+        Assertions.assertNotNull(actualCategory.getId());
+        Assertions.assertEquals(expectedName, actualCategory.getName());
+        Assertions.assertEquals(expectedDescription, actualCategory.getDescription());
+        Assertions.assertEquals(expectedIsActive, actualCategory.isActive());
+        Assertions.assertNotNull(actualCategory.getCreatedAt());
+        Assertions.assertNotNull(actualCategory.getUpdatedAt());
+        Assertions.assertNotNull(actualCategory.getDeletedAt());
     }
 }
