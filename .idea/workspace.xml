@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ec1249-f41b-48db-bc25-f9cff0542306" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/CategoryGateway.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/category/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/category/CategoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package.json" />
         <option value="Record" />
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -68,7 +66,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.CategoryTest.executor": "Run",
+    "Gradle.CategoryTest.executor": "Debug",
+    "Gradle.CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParams_thenReturnAUpdatedCategoryUnupdated.executor": "Run",
     "Gradle.CategoryTest.givenAValidInactiveCategory_whenCallDeactivate_thenReturnAActiveCategory.executor": "Run",
     "Gradle.MainTest.testMain.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -209,7 +208,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705787643712</updated>
       <workItem from="1705787645611" duration="263000" />
-      <workItem from="1705787916140" duration="13400000" />
+      <workItem from="1705787916140" duration="14030000" />
     </task>
     <servers />
   </component>
