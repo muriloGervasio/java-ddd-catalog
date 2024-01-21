@@ -1,6 +1,8 @@
-package com.ddd_catalog.domain.validation;
+package com.ddd_catalog.domain.validation.handler;
 
 import com.ddd_catalog.domain.exceptions.DomainException;
+import com.ddd_catalog.domain.validation.Error;
+import com.ddd_catalog.domain.validation.ValidationHandler;
 
 import java.util.List;
 

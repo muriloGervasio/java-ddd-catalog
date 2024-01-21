@@ -1,8 +1,7 @@
 package com.ddd_catalog.domain.category;
 
-import com.ddd_catalog.domain.category.Category;
 import com.ddd_catalog.domain.exceptions.DomainException;
-import com.ddd_catalog.domain.validation.ThrowsValidationHandler;
+import com.ddd_catalog.domain.validation.handler.ThrowsValidationHandler;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

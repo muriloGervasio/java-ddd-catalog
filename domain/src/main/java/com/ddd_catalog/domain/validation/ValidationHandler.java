@@ -9,7 +9,7 @@ public interface ValidationHandler {
 
     ValidationHandler validate(Validation aValidation);
 
-    default boolean hasErrors() {
+    default boolean hasError() {
         return getErrors() != null && !(getErrors().isEmpty());
     }
 

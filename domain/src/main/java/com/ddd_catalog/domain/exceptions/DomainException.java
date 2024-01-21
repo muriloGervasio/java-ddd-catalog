@@ -1,7 +1,6 @@
 package com.ddd_catalog.domain.exceptions;
 
 import com.ddd_catalog.domain.validation.Error;
-import com.ddd_catalog.domain.validation.ThrowsValidationHandler;
 
 import java.util.List;
 

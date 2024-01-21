@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ec1249-f41b-48db-bc25-f9cff0542306" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/CategoryGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/NullaryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/UnitUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/create/CreateCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/create/CreateCategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/create/CreateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/create/DefaultCreateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/DefaultUpdateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/UpdateCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/UpdateCategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/UpdateCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/category/create/CreateCategoryUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/category/update/UpdateCategoryUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/handler/Notification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/UseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/UseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/UseCaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/exceptions/DomainException.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/exceptions/DomainException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/ThrowsValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/handler/ThrowsValidationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/ValidationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/ValidationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/category/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/category/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/ddd_catalog/domain/application/infrastructure/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/ddd_catalog/domain/application/infrastructure/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +41,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -38,9 +61,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
         <option value="Record" />
         <option value="Class" />
-        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -66,10 +89,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.CategoryTest.executor": "Debug",
+    "Gradle.CategoryTest.executor": "Run",
     "Gradle.CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParams_thenReturnAUpdatedCategoryUnupdated.executor": "Run",
     "Gradle.CategoryTest.givenAValidInactiveCategory_whenCallDeactivate_thenReturnAActiveCategory.executor": "Run",
+    "Gradle.CreateCategoryUseCaseTest.executor": "Run",
     "Gradle.MainTest.testMain.executor": "Run",
+    "Gradle.UpdateCategoryUseCaseTest.executor": "Run",
+    "Gradle.java-ddd-catalog [dependencies].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -82,11 +108,14 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/murilorodrigues/Documents/repositories/java_ddd/java-ddd-catalog/infrastructure/src/main/java/com/ddd_catalog/domain/application/infrastructure/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.CategoryTest">
+  <component name="RunManager" selected="Gradle.UpdateCategoryUseCaseTest">
     <configuration name="CategoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -159,7 +188,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MainTest.testMain" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UpdateCategoryUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,9 +199,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":application:test" />
             <option value="--tests" />
-            <option value="&quot;com.ddd_catalog.domain.application.infrastructure.MainTest.testMain&quot;" />
+            <option value="&quot;com.ddd_catalog.domain.application.category.update.UpdateCategoryUseCaseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,12 +212,35 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="java-ddd-catalog [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UpdateCategoryUseCaseTest" />
         <item itemvalue="Gradle.CategoryTest" />
+        <item itemvalue="Gradle.java-ddd-catalog [dependencies]" />
         <item itemvalue="Gradle.CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParams_thenReturnAUpdatedCategoryUnupdated" />
         <item itemvalue="Gradle.CategoryTest.givenAValidInactiveCategory_whenCallDeactivate_thenReturnAActiveCategory" />
-        <item itemvalue="Gradle.MainTest.testMain" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +260,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705787643712</updated>
       <workItem from="1705787645611" duration="263000" />
-      <workItem from="1705787916140" duration="14030000" />
+      <workItem from="1705787916140" duration="22012000" />
     </task>
     <servers />
   </component>
@@ -225,17 +277,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/UseCase.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
