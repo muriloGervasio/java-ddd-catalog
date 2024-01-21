@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ec1249-f41b-48db-bc25-f9cff0542306" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/AggregateRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/Identifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/ValueObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/CategoryID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/CategoryValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/exceptions/DomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/ThrowsValidationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/ValidationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/validation/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/AggregateRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/AggregateRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/category/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/com/ddd_catalog/domain/category/CategoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -70,7 +75,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.CategoryTest.executor": "Run",
+    "Gradle.CategoryTest.executor": "Debug",
     "Gradle.MainTest.testMain.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -88,7 +93,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.CategoryTest">
+    <configuration name="CategoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":domain:test" />
+            <option value="--tests" />
+            <option value="&quot;com.ddd_catalog.domain.category.CategoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MainTest.testMain" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -115,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CategoryTest" />
         <item itemvalue="Gradle.MainTest.testMain" />
       </list>
     </recent_temporary>
@@ -135,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705787643712</updated>
       <workItem from="1705787645611" duration="263000" />
-      <workItem from="1705787916140" duration="5083000" />
+      <workItem from="1705787916140" duration="9085000" />
     </task>
     <servers />
   </component>

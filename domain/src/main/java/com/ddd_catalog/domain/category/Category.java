@@ -1,6 +1,7 @@
 package com.ddd_catalog.domain.category;
 
 import com.ddd_catalog.domain.AggregateRoot;
+import com.ddd_catalog.domain.validation.ValidationHandler;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -74,5 +75,8 @@ public class Category extends AggregateRoot<CategoryID> {
         return deletedAt;
     }
 
-
+    @Override
+    public void validate(ValidationHandler handler) {
+        new CategoryValidator(this, handler).validate();
+    }
 }
