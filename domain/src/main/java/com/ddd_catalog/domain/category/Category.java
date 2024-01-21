@@ -16,12 +16,12 @@ public class Category extends AggregateRoot<CategoryID> {
     private Instant deletedAt;
 
     private Category(final CategoryID id,
-                    final String name,
-                    final String description,
-                    final boolean active,
-                    final Instant createdAt,
-                    final Instant updatedAt,
-                    final Instant deletedAt) {
+                     final String name,
+                     final String description,
+                     final boolean active,
+                     final Instant createdAt,
+                     final Instant updatedAt,
+                     final Instant deletedAt) {
         super(id);
         this.id = id;
         this.name = name;
@@ -32,20 +32,40 @@ public class Category extends AggregateRoot<CategoryID> {
         this.deletedAt = deletedAt;
     }
 
-    public static Category newCategory(final String name,
-                                       final String description,
-                                       final boolean active) {
+    public static Category newCategory(final String name, final String description, final boolean active) {
         final var id = UUID.randomUUID().toString();
         final var now = Instant.now();
         final var deletedAt = active ? null : now;
 
-        return new Category(CategoryID.unique(),
-                name,
-                description,
-                active,
-                now,
-                now,
-                deletedAt);
+        return new Category(CategoryID.unique(), name, description, active, now, now, deletedAt);
+    }
+
+    public Category deactivate() {
+        if (getDeletedAt() == null) {
+            this.deletedAt = Instant.now();
+        }
+
+        this.active = false;
+        this.updatedAt = Instant.now();
+        return this;
+    }
+
+    public Category activate() {
+        this.active = true;
+        this.updatedAt = Instant.now();
+        this.deletedAt = null;
+        return this;
+    }
+
+    public Category update(final String name, final String description, final boolean active) {
+        this.name = name;
+        this.description = description;
+        this.updatedAt = Instant.now();
+
+        if (active) this.activate();
+        else this.deactivate();
+
+        return this;
     }
 
     public CategoryID getId() {
