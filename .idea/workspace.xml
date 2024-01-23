@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30ec1249-f41b-48db-bc25-f9cff0542306" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/delete/DefaultDeleteCategoryByIdUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/delete/DeleteCategoryByIdCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/delete/DeleteCategoryByIdUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/retrieve/get/DefaultGetCategoryUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/retrieve/get/GetCategoryOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/retrieve/get/GetCategoryQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/retrieve/get/GetCategoryUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/category/delete/DeleteCategoryUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/category/retrieve/get/GetCategoryByIdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/retrieve/list/DefaultListCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/retrieve/list/ListCategoryOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/retrieve/list/ListCategoryUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/category/retrieve/list/ListCategoryUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/DefaultUpdateCategoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/update/DefaultUpdateCategoryUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/UpdateCategoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/update/UpdateCategoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/UpdateCategoryOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/update/UpdateCategoryOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/update/UpdateCategoryUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/ddd_catalog/domain/application/category/update/UpdateCategoryUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/category/update/UpdateCategoryUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/com/ddd_catalog/domain/application/category/update/UpdateCategoryUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/pagination/Pagination.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/ddd_catalog/domain/pagination/Pagination.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +247,7 @@
       <updated>1705787643712</updated>
       <workItem from="1705787645611" duration="263000" />
       <workItem from="1705787916140" duration="23065000" />
-      <workItem from="1705965969874" duration="4266000" />
+      <workItem from="1705965969874" duration="5969000" />
     </task>
     <servers />
   </component>
