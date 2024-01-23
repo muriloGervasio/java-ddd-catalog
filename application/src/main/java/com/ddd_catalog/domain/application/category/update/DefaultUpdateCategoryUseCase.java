@@ -1,4 +1,4 @@
-package com.ddd_catalog.domain.application.update;
+package com.ddd_catalog.domain.application.category.update;
 
 import com.ddd_catalog.domain.category.Category;
 import com.ddd_catalog.domain.category.CategoryGateway;

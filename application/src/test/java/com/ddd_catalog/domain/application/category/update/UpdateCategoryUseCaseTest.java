@@ -1,10 +1,9 @@
 package com.ddd_catalog.domain.application.category.update;
 
-import com.ddd_catalog.domain.application.update.DefaultUpdateCategoryUseCase;
-import com.ddd_catalog.domain.application.update.UpdateCategoryCommand;
 import com.ddd_catalog.domain.category.Category;
 import com.ddd_catalog.domain.category.CategoryGateway;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -25,6 +24,11 @@ public class UpdateCategoryUseCaseTest {
 
     @Mock
     private CategoryGateway gateway;
+
+    @BeforeEach
+    public void clean() {
+        Mockito.reset(this.gateway);
+    }
 
     @Test
     public void givenAValidCommand_whenExecute_thenShouldUpdateCategory() {
